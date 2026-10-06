@@ -23,9 +23,6 @@ const escapeHtml = (text) => text
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 
-const aosAttrs = (index) =>
-    `data-aos="fade-up" data-aos-duration="700"${index ? ` data-aos-delay="${index * 100}"` : ''}`;
-
 const jsonLd = (data) =>
     `<script type="application/ld+json">\n${JSON.stringify(data, null, 4)}\n</script>`;
 
@@ -35,13 +32,13 @@ const helpers = {
     // `featured` = the cards shown on the home page, `all` = the products page.
     productCards(which) {
         const list = which === 'featured' ? products.filter((p) => p.featured) : products;
-        return list.map((p, i) => {
+        return list.map((p) => {
             const message = `Hello CEOT Farms, I'm interested in your ${p.inquiry}. What's available right now?`;
             const href = `${site.whatsappUrl}?text=${encodeURIComponent(message)}`;
             const cta = p.inquire
                 ? `\n        <a class="productCta" href="${href}" target="_blank" rel="noopener noreferrer"><span class="btn btn--primary btn--small">Inquire on WhatsApp</span></a>`
                 : '';
-            return `<div class="servicesDiv productCard" ${aosAttrs(i)}>
+            return `<div class="servicesDiv productCard">
     <div>
         <i class="fa-solid ${p.icon}"></i>
         <h3>${escapeHtml(p.name)}</h3>
@@ -71,10 +68,9 @@ const helpers = {
     // `featured` = the home page teaser, otherwise a group name from data.mjs.
     videoEmbeds(which) {
         const list = which === 'featured' ? videos.filter((v) => v.featured) : videos.filter((v) => v.group === which);
-        return list.map((v, i) => {
+        return list.map((v) => {
             const short = v.group === 'shorts' ? ' videoEmbed--short' : '';
-            const aos = which === 'featured' ? aosAttrs(0) : aosAttrs(i);
-            return `<div class="videoEmbed${short}" ${aos}>
+            return `<div class="videoEmbed${short}">
     <iframe src="https://www.youtube.com/embed/${v.id}" title="${escapeHtml(v.title)}" frameborder="0" allowfullscreen></iframe>
 </div>`;
         }).join('\n');
@@ -100,11 +96,11 @@ const helpers = {
     // `teaser` = the three photos on the home page, `all` = the gallery page (opens the lightbox).
     galleryItems(which) {
         if (which === 'teaser') {
-            return photos.filter((p) => p.teaser).map((p, i) => `<div class="galleryItem" ${aosAttrs(i)}>
+            return photos.filter((p) => p.teaser).map((p) => `<div class="galleryItem">
     <img src="images/${p.file}" alt="${escapeHtml(p.alt)}" loading="lazy" />
 </div>`).join('\n');
         }
-        return photos.map((p, i) => `<button class="galleryItem" type="button" ${aosAttrs(i)} aria-label="View larger image: ${escapeHtml(p.label)}">
+        return photos.map((p) => `<button class="galleryItem" type="button" aria-label="View larger image: ${escapeHtml(p.label)}">
     <img src="images/${p.file}" alt="${escapeHtml(p.alt)}" loading="lazy" />
 </button>`).join('\n\n');
     },
