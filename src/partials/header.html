@@ -1,0 +1,19 @@
+<header id="header">
+    <button type="button" class="iconBtn" id="hamburgerBtn" aria-label="Open menu" aria-controls="sideMenu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+
+    <div class="logoDiv">
+        <a href="{{home}}#home"><img class="logo" src="images/ceot-logo.jpg" alt="CEOT Sumbak Farms logo — goat, sheep, egg, and poultry farm in Rufunsa, Zambia" /></a>
+    </div>
+    <nav class="lgdNav">
+        {{> nav-links}}
+    </nav>
+    <a href="tel:{{phoneTel}}"><span class="btn">Call the Farm</span></a>
+    <button type="button" class="iconBtn" id="themeToggle" aria-label="Switch to dark mode" aria-pressed="false"><i class="fa-solid fa-moon" id="moon"></i></button>
+</header>
+
+<div class="smdNav" id="sideMenu" aria-hidden="true">
+    <a class="smdNavCta" href="tel:{{phoneTel}}"><span class="btn">Call the Farm</span></a>
+    <nav>
+        {{> nav-links}}
+    </nav>
+</div>

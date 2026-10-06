@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> head}}
+    <meta name="description" content="Photos of goats, Dorper sheep, and daily farm life at CEOT Sumbak Farms in Rufunsa, Zambia. See our award-winning livestock and sustainable farming operations.">
+    <title>Farm Gallery | CEOT Sumbak Farms — Goats, Sheep &amp; Farm Life in Rufunsa, Zambia</title>
+</head>
+
+<body>
+
+    {{> header}}
+
+    <section class="gallerySection gallerySection--standalone" id="gallery">
+        <div class="sectionHeader" data-aos="zoom-in" data-aos-duration="700">
+            <p class="sectionHeader__eyebrow">OUR FARM</p>
+            <h3 class="sectionHeader__title">
+                Farm&NonBreakingSpace;
+                <span>Gallery</span>
+            </h3>
+            <p class="sectionHeader__intro">A look at life on CEOT Sumbak Farms — our goats, sheep, and daily farm operations.</p>
+        </div>
+
+        <div class="galleryGrid">
+            {{galleryItems all}}
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Enlarged gallery image">
+        <button class="lightboxClose" type="button" aria-label="Close">&times;</button>
+        <img class="lightboxImage" src="" alt="" loading="lazy" />
+    </div>
+
+    {{> footer}}
+
+    {{> scripts}}
+
+</body>
+
+</html>

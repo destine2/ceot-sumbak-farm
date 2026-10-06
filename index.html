@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!-- Built from src/pages/index.html by build.mjs. Edit that file and run "node build.mjs" instead of editing this one. -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        try {
+            if (localStorage.getItem('ceot-dark-mode') === 'true') document.documentElement.classList.add('dark');
+        } catch (e) {}
+    </script>
+    <link rel="preload" as="image" href="images/ceot-logo.jpg">
+
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/86c2fd87c2.js" crossorigin="anonymous" defer></script>
+
+    <!-- ~~~~~~~~~~~~ -->
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+
+    <!-- ~~~~~~~~~~~~ -->
+
+    <!-- AOS Library -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- ~~~~~~~~~~~ -->
+
+    <link rel="icon" href="images/ceot-logo.jpg" />
+
+    <!-- Link previews (WhatsApp, Facebook, LinkedIn, X). Title and description come from this page's
+         <title> and meta description; build.mjs fills them in. -->
+    <link rel="canonical" href="https://ceotfarms.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CEOT Sumbak Farms" />
+    <meta property="og:url" content="https://ceotfarms.com/" />
+    <meta property="og:title" content="Zambia's Best Goats, Shipped Near and Far | CEOT Sumbak Farms" />
+    <meta property="og:description" content="CEOT Sumbak Farms raises award-winning goats in Rufunsa, Zambia — winner of Best Goat Breed in Zambia, with 2,000+ goats on the farm. Local sales and international shipping. Also Dorper sheep, eggs, and poultry. Ask on WhatsApp what's available." />
+    <meta property="og:image" content="https://ceotfarms.com/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="CEOT Sumbak Farms team kneeling with an award-winning buck in Zambia" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="description" content="CEOT Sumbak Farms raises award-winning goats in Rufunsa, Zambia — winner of Best Goat Breed in Zambia, with 2,000+ goats on the farm. Local sales and international shipping. Also Dorper sheep, eggs, and poultry. Ask on WhatsApp what's available.">
+    <title>Zambia's Best Goats, Shipped Near and Far | CEOT Sumbak Farms</title>
+    <link rel="preload" as="image" href="images/hero-goats.jpg">
+
+    <!-- Animate.css Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- ~~~~~~~~~~~~~~~~~~~ -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "CEOT Sumbak Farms",
+        "description": "Award-winning goat farm in Rufunsa, Lusaka district, Zambia — winner of Best Goat Breed in Zambia. Goats for local sale and international shipping; also Dorper sheep, eggs, and poultry. Sustainable farming since 2016.",
+        "foundingDate": "2016",
+        "url": "https://ceotfarms.com/",
+        "telephone": "+260977681624",
+        "email": "beadade58@hotmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Rufunsa",
+            "addressRegion": "Lusaka district",
+            "addressCountry": "ZM"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "sameAs": [
+            "https://www.facebook.com/share/ciAH7M63VCaBFTGe/?mibextid=qi2Omg",
+            "https://www.youtube.com/@CEOTFarms"
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CEOT Sumbak Farms",
+        "url": "https://ceotfarms.com/",
+        "logo": "https://ceotfarms.com/images/ceot-logo.jpg",
+        "sameAs": [
+            "https://www.facebook.com/share/ciAH7M63VCaBFTGe/?mibextid=qi2Omg",
+            "https://www.youtube.com/@CEOTFarms"
+        ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <header id="header">
+        <button type="button" class="iconBtn" id="hamburgerBtn" aria-label="Open menu" aria-controls="sideMenu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+
+        <div class="logoDiv">
+            <a href="#home"><img class="logo" src="images/ceot-logo.jpg" alt="CEOT Sumbak Farms logo — goat, sheep, egg, and poultry farm in Rufunsa, Zambia" /></a>
+        </div>
+        <nav class="lgdNav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="tel:+260977681624"><span class="btn">Call the Farm</span></a>
+        <button type="button" class="iconBtn" id="themeToggle" aria-label="Switch to dark mode" aria-pressed="false"><i class="fa-solid fa-moon" id="moon"></i></button>
+    </header>
+
+    <div class="smdNav" id="sideMenu" aria-hidden="true">
+        <a class="smdNavCta" href="tel:+260977681624"><span class="btn">Call the Farm</span></a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="hero" id="home">
+        <div>
+            <h1 class="animate__animated animate__fadeInLeft animate__slower">Zambia's best goats, raised on our farm and shipped near and far.</h1>
+            <p class="hero-subheading animate__animated animate__fadeIn animate__delay-1s">Winner of Best Goat Breed in Zambia · 2,000+ goats on our Rufunsa farm · Raising goats since 2016</p>
+            <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-1s">
+                <a href="#products"><span class="btn">See Our Goats</span></a>
+                <a href="https://wa.me/260977681624?text=Hello%20CEOT%20Farms%2C%20I'm%20interested%20in%20your%20goats.%20What's%20available%20right%20now%3F" target="_blank" rel="noopener noreferrer"><span class="btn">Ask What's Available on WhatsApp</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="impactSection" id="impact">
+        <div class="sectionHeader sectionHeader--onDark" data-aos="zoom-in" data-aos-duration="700">
+            <p class="sectionHeader__eyebrow">CEOT FARMS BY THE NUMBERS</p>
+            <h3 class="sectionHeader__title">
+                Our&NonBreakingSpace;
+                <span>Impact</span>
+            </h3>
+            <p class="sectionHeader__intro">Numbers that reflect <span data-years-since="2016">10</span> years of dedicated, sustainable farming in Rufunsa.</p>
+        </div>
+
+        <div class="mainImpactDiv">
+            <div class="impactCard" data-aos="fade-up" data-aos-duration="700">
+                <i class="fa-solid fa-paw"></i>
+                <h4>2,000+</h4>
+                <p>Goats Currently Raised</p>
+            </div>
+
+            <div class="impactCard" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                <i class="fa-solid fa-paw"></i>
+                <h4>300+</h4>
+                <p>Dorper Sheep Currently Raised</p>
+            </div>
+
+            <div class="impactCard" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                <i class="fa-solid fa-chart-line"></i>
+                <h4>8,000+</h4>
+                <p>Goats &amp; Sheep Raised Since 2016</p>
+            </div>
+
+            <div class="impactCard" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                <i class="fa-solid fa-trophy"></i>
+                <h4>Award Winner</h4>
+                <p>Best Goat Breed in Zambia</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="secondSection" id="experience">
+        <div data-aos="fade-up" data-aos-offset="400" data-aos-duration="700">
+            <img src="images/ceot-farm-3.jpg" alt="Goats and livestock grazing at CEOT Sumbak Farms in Rufunsa, Zambia" loading="lazy" />
+            <img src="images/ceot-farm-1.jpg" alt="Daily farm life and animal care at CEOT Sumbak Farms in Rufunsa, Zambia" id="experienceImg" loading="lazy" />
+        </div>
+        <div data-aos="zoom-in-left" data-aos-offset="200" data-aos-duration="700">
+            <div>
+                <h3>Since</h3>
+                &NonBreakingSpace;
+                <h4>2016</h4>
+            </div>
+            <h3>
+                We Have
+                <span data-years-since="2016">10</span>
+                Years of Experience
+            </h3>
+            <p>
+                We started in 2016 raising layers, broilers and pigs. Over <span data-years-since="2016">10</span> years, goats became our focus.
+                Today we keep 2,000+ goats and 300+ Dorper sheep on our farm in Rufunsa, Lusaka district, and breed for strong health, good size and breeding quality.
+                Our goats have won Best Goat Breed in Zambia, and we sell to buyers at home and ship internationally.
+            </p>
+        </div>
+    </section>
+
+    <section class="productsSection" id="products">
+        <div class="sectionHeader" data-aos="zoom-in" data-aos-duration="700">
+            <p class="sectionHeader__eyebrow">WHAT WE OFFER</p>
+            <h3 class="sectionHeader__title">
+                Our Products &amp;&NonBreakingSpace;
+                <span>Livestock</span>
+            </h3>
+            <p class="sectionHeader__intro">Goats are our specialty — available locally and for international shipping. Message us for current availability, breed details, and pricing.</p>
+        </div>
+
+        <div class="mainServiceDiv">
+
+            <div class="servicesDiv productCard" data-aos="fade-up" data-aos-duration="700">
+                <div>
+                    <i class="fa-solid fa-paw"></i>
+                    <h3>Goats</h3>
+                </div>
+                <div>
+                    <p>
+                        Our specialty and best seller. Award-winning goat breeds — winner of Best Goat Breed in Zambia — known for strong health, good size, and excellent breeding quality. 2,000+ goats on the farm, available locally and for international shipping.
+                    </p>
+                    <a class="productCta" href="https://wa.me/260977681624?text=Hello%20CEOT%20Farms%2C%20I'm%20interested%20in%20your%20goats.%20What's%20available%20right%20now%3F" target="_blank" rel="noopener noreferrer"><span class="btn btn--primary btn--small">Inquire on WhatsApp</span></a>
+                </div>
+            </div>
+
+            <div class="servicesDiv productCard" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                <div>
+                    <i class="fa-solid fa-paw"></i>
+                    <h3>Dorper Sheep</h3>
+                </div>
+                <div>
+                    <p>
+                        Top-quality Dorper sheep, valued for hardiness and excellent meat production. Currently raising 300+ sheep.
+                    </p>
+                    <a class="productCta" href="https://wa.me/260977681624?text=Hello%20CEOT%20Farms%2C%20I'm%20interested%20in%20your%20Dorper%20sheep.%20What's%20available%20right%20now%3F" target="_blank" rel="noopener noreferrer"><span class="btn btn--primary btn--small">Inquire on WhatsApp</span></a>
+                </div>
+            </div>
+
+            <div class="servicesDiv productCard" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                <div>
+                    <i class="fa-solid fa-egg"></i>
+                    <h3>Eggs</h3>
+                </div>
+                <div>
+                    <p>
+                        Fresh, top-grade eggs from our layers, available for local supply. Contact us for current availability and pricing.
+                    </p>
+                    <a class="productCta" href="https://wa.me/260977681624?text=Hello%20CEOT%20Farms%2C%20I'm%20interested%20in%20your%20eggs.%20What's%20available%20right%20now%3F" target="_blank" rel="noopener noreferrer"><span class="btn btn--primary btn--small">Inquire on WhatsApp</span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ctaRow ctaRow--spaced" data-aos="fade-up" data-aos-duration="700">
+            <a href="products.html"><span class="btn btn--primary">View All Products</span></a>
+        </div>
+    </section>
+
+    <section class="gallerySection" id="gallery">
+        <div class="sectionHeader" data-aos="zoom-in" data-aos-duration="700">
+            <p class="sectionHeader__eyebrow">OUR FARM</p>
+            <h3 class="sectionHeader__title">
+                Farm&NonBreakingSpace;
+                <span>Gallery</span>
+            </h3>
+            <p class="sectionHeader__intro">A look at life on CEOT Sumbak Farms — our goats, sheep, and daily farm operations.</p>
+        </div>
+
+        <div class="galleryGrid galleryGrid--teaser">
+            <div class="galleryItem" data-aos="fade-up" data-aos-duration="700">
+                <img src="images/ceot-farm-1.jpg" alt="Daily farm life and animal care at CEOT Sumbak Farms in Rufunsa, Zambia" loading="lazy" />
+            </div>
+            <div class="galleryItem" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                <img src="images/ceot-farm-2.jpg" alt="Sustainable goat and Dorper sheep farming at CEOT Sumbak Farms in Rufunsa, Zambia" loading="lazy" />
+            </div>
+            <div class="galleryItem" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                <img src="images/ceot-farm-3.jpg" alt="Goats and livestock grazing at CEOT Sumbak Farms in Rufunsa, Zambia" loading="lazy" />
+            </div>
+        </div>
+
+        <div class="ctaRow" data-aos="fade-up" data-aos-duration="700">
+            <a href="gallery.html"><span class="btn btn--primary">View Full Gallery</span></a>
+        </div>
+    </section>
+
+    <section class="videosSection" id="videos">
+        <div class="sectionHeader" data-aos="zoom-in" data-aos-duration="700">
+            <p class="sectionHeader__eyebrow">ON YOUTUBE</p>
+            <h3 class="sectionHeader__title">
+                Watch Our Farm in&NonBreakingSpace;
+                <span>Action</span>
+            </h3>
+            <p class="sectionHeader__intro">See our goats, Dorper sheep, and daily farm life at CEOT Sumbak Farms — subscribe to our YouTube channel for regular updates.</p>
+        </div>
+
+        <div class="videoGrid videoGrid--teaser">
+            <div class="videoEmbed" data-aos="fade-up" data-aos-duration="700">
+                <iframe src="https://www.youtube.com/embed/3MMdaybJ1Vo" title="2026 Zonal Show" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="ctaRow" data-aos="fade-up" data-aos-duration="700">
+            <a href="videos.html"><span class="btn btn--primary btn--large">Watch More Videos</span></a>
+        </div>
+    </section>
+
+    <section class="fourthSection" id="about">
+        <div class="fourthSectionImageDiv" data-aos="zoom-in-right" data-aos-duration="600">
+            <img src="images/ceot-farm-2.jpg" alt="Sustainable goat and Dorper sheep farming at CEOT Sumbak Farms in Rufunsa, Zambia" loading="lazy" />
+        </div>
+
+        <div class="aboutDiv">
+            <div data-aos="fade-up" data-aos-duration="700">
+                <h3>
+                    About&NonBreakingSpace;
+                    <span>Us</span>
+                </h3>
+            </div>
+
+            <div class="aboutSectionDiv">
+                <div>
+                    <div data-aos="fade-right" data-aos-duration="700">
+                        <div>
+                            <i class="fa-solid fa-trophy"></i>
+                            <h3>Our Mission</h3>
+                        </div>
+                        <p>
+                            To give farmers and buyers, in Zambia and abroad, healthy, well-bred goats they can build a herd on, at fair prices.
+                            We also supply Dorper sheep and fresh eggs.
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-left" data-aos-duration="700">
+                        <div>
+                            <i class="fa-solid fa-eye"></i>
+                            <h3>Our Vision</h3>
+                        </div>
+                        <p>
+                            To be the first goat farm buyers think of, in Zambia and beyond,
+                            known for award-winning breeding stock raised with care in Rufunsa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="siteFooter" id="footer">
+        <div class="siteFooter__inner">
+            <div class="siteFooter__grid">
+                <div class="siteFooter__col siteFooter__brand">
+                    <a href="#home" class="siteFooter__logoLink">
+                        <img class="siteFooter__logo" src="images/ceot-logo.jpg" alt="CEOT Sumbak Farms logo" />
+                    </a>
+                    <p class="siteFooter__tagline">Award-winning goats from Rufunsa, Zambia — local &amp; international shipping</p>
+                </div>
+
+                <div class="siteFooter__col siteFooter__links">
+                    <h3 class="siteFooter__heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="siteFooter__col siteFooter__contact">
+                    <h3 class="siteFooter__heading">Contact <span class="siteFooter__accent">Us</span></h3>
+                    <a class="siteFooter__email" href="mailto:beadade58@hotmail.com">beadade58@hotmail.com</a>
+                    <div class="siteFooter__social">
+                        <a href="mailto:beadade58@hotmail.com" aria-label="Email CEOT Sumbak Farms">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/260977681624" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp CEOT Sumbak Farms">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/ciAH7M63VCaBFTGe/?mibextid=qi2Omg" target="_blank" rel="noopener noreferrer" aria-label="Facebook CEOT Sumbak Farms">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@CEOTFarms" target="_blank" rel="noopener noreferrer" aria-label="YouTube CEOT Sumbak Farms">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="siteFooter__col siteFooter__visit" id="visiting-hours">
+                    <h3 class="siteFooter__heading">Visit Us</h3>
+                    <p class="siteFooter__location">
+                        <i class="fa-solid fa-location-dot"></i> Rufunsa, Lusaka district, Zambia.
+                    </p>
+                    <p class="siteFooter__hours">
+                        We are always open <span class="siteFooter__badge">24/7</span> except on specific holidays.
+                    </p>
+                </div>
+            </div>
+
+            <div class="siteFooter__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251830.94287042295!2d29.62083706640623!3d-15.23058924541264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1917bb2e07066643%3A0x1fc73f3d40f9b5e2!2sRufunsa%2C%20Zambia!5e0!3m2!1sen!2sus!4v1690198345787!5m2!1sen!2sus"
+                    title="Map of Rufunsa, Zambia — CEOT Sumbak Farms location"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen=""></iframe>
+            </div>
+        </div>
+
+        <div class="siteFooter__copyright">
+            <p>&copy; <span data-current-year>2026</span> CEOT Sumbak Farms. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="index.js"></script>
+
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

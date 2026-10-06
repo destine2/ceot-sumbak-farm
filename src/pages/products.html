@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> head}}
+    <meta name="description" content="Buy award-winning goats from CEOT Sumbak Farms in Rufunsa, Zambia — winner of Best Goat Breed in Zambia. Local sales and international shipping. Also Dorper sheep, eggs, and poultry. Ask on WhatsApp for availability and pricing.">
+    <title>Goats for Sale in Zambia — Local &amp; International Shipping | CEOT Sumbak Farms</title>
+
+    {{productsJsonLd}}
+</head>
+
+<body>
+
+    {{> header}}
+
+    <section class="productsSection productsSection--standalone" id="products">
+        <div class="sectionHeader" data-aos="zoom-in" data-aos-duration="700">
+            <p class="sectionHeader__eyebrow">WHAT WE OFFER</p>
+            <h3 class="sectionHeader__title">
+                Our Products &amp;&NonBreakingSpace;
+                <span>Livestock</span>
+            </h3>
+            <p class="sectionHeader__intro">Goats are our specialty — available locally and for international shipping. Message us for current availability, breed details, and pricing.</p>
+        </div>
+
+        <div class="mainServiceDiv">
+
+            {{productCards all}}
+
+        </div>
+    </section>
+
+    {{> footer}}
+
+    {{> scripts}}
+
+</body>
+
+</html>
